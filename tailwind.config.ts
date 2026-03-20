@@ -57,6 +57,15 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        foundros: {
+          fg: "hsl(var(--foundros-fg))",
+          bg: "hsl(var(--foundros-bg))",
+          muted: "hsl(var(--foundros-muted))",
+        },
+      },
+      fontSize: {
+        "foundros-heading": ["clamp(2.25rem, 5vw, 4.5rem)", { lineHeight: "1.08", letterSpacing: "-0.025em" }],
+        "foundros-caption": ["0.75rem", { lineHeight: "1", letterSpacing: "0.15em" }],
       },
       borderRadius: {
         lg: "var(--radius)",
