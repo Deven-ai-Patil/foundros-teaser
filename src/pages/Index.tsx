@@ -70,7 +70,7 @@ const Index = () => {
         }`}
       >
         <h1 className="text-foundros-heading font-semibold tracking-tight leading-[1.08] text-foundros-fg">
-          <span className="block">The way founders browse the internet</span>
+          <span className="block">The way founders <span className="font-display italic text-foundros-accent">browse</span> the internet</span>
           <span className="block">is about to change.</span>
         </h1>
       </div>
