@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@1,500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -38,6 +38,7 @@
     --foundros-fg: 0 0% 0%;
     --foundros-bg: 0 0% 100%;
     --foundros-muted: 0 0% 62%;
+    --foundros-accent: 15 80% 52%;
   }
 
   * {

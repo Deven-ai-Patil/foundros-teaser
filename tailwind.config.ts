@@ -61,7 +61,11 @@ export default {
           fg: "hsl(var(--foundros-fg))",
           bg: "hsl(var(--foundros-bg))",
           muted: "hsl(var(--foundros-muted))",
+          accent: "hsl(var(--foundros-accent))",
         },
+      },
+      fontFamily: {
+        display: ['"Playfair Display"', 'serif'],
       },
       fontSize: {
         "foundros-heading": ["clamp(2.25rem, 5vw, 4.5rem)", { lineHeight: "1.08", letterSpacing: "-0.025em" }],
