@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#181818"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C83400"/>
+      <stop offset="50%" stop-color="#FF5020"/>
+      <stop offset="100%" stop-color="#FF8040"/>
+    </linearGradient>
+    <clipPath id="globe-clip">
+      <circle cx="150" cy="150" r="108"/>
+    </clipPath>
+  </defs>
+
+  <!-- squircle background -->
+  <rect width="300" height="300" rx="72" fill="url(#bg)"/>
+
+  <!-- globe orange fill -->
+  <circle cx="150" cy="150" r="108" fill="url(#ring)"/>
+
+  <!-- latitude and longitude lines clipped to globe -->
+  <g clip-path="url(#globe-clip)">
+    <!-- equator -->
+    <line x1="42" y1="150" x2="258" y2="150" stroke="#080808" stroke-width="5" opacity="0.9"/>
+    <!-- upper latitude -->
+    <line x1="56" y1="108" x2="244" y2="108" stroke="#080808" stroke-width="4" opacity="0.9"/>
+    <!-- lower latitude -->
+    <line x1="56" y1="192" x2="244" y2="192" stroke="#080808" stroke-width="4" opacity="0.9"/>
+    <!-- top latitude -->
+    <line x1="90" y1="68" x2="210" y2="68" stroke="#080808" stroke-width="3" opacity="0.9"/>
+    <!-- bottom latitude -->
+    <line x1="90" y1="232" x2="210" y2="232" stroke="#080808" stroke-width="3" opacity="0.9"/>
+    <!-- center meridian -->
+    <line x1="150" y1="42" x2="150" y2="258" stroke="#080808" stroke-width="5" opacity="0.9"/>
+    <!-- left longitude curve -->
+    <ellipse cx="150" cy="150" rx="54" ry="108" fill="none" stroke="#080808" stroke-width="4" opacity="0.9"/>
+    <!-- far left longitude -->
+    <ellipse cx="150" cy="150" rx="20" ry="108" fill="none" stroke="#080808" stroke-width="3" opacity="0.9"/>
+  </g>
+</svg>
